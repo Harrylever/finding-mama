@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>Finding Mama</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="stage">
+  <canvas id="game" width="960" height="540"></canvas>
+
+  <div class="startng-card" id="player-card" hidden>
+    <img id="player-face" alt="">
+    <div>
+      <b id="player-name"></b>
+      <span id="player-account"></span>
+    </div>
+    <button id="player-sign-in" hidden>Sign in</button>
+  </div>
+
+  <div id="hud" hidden>
+    <span id="hud-scene"></span>
+    <span id="hud-stars">★ 0</span>
+    <span id="hud-time">0:00</span>
+  </div>
+
+  <div id="title" class="panel">
+    <h1>Finding Mama</h1>
+    <p class="sub">A little girl. A busy market. A mother in a yellow headtie.</p>
+    <p id="title-who"></p>
+    <button id="start-btn">Begin the journey</button>
+    <p class="hint">Move: arrows / WASD, or tap to walk &middot; Talk &amp; pick up: walk into things &middot; Space / tap: next line</p>
+    <div id="board-title"></div>
+  </div>
+
+  <div id="dialog" hidden>
+    <div id="dialog-name"></div>
+    <div id="dialog-text"></div>
+    <div class="next">▶</div>
+  </div>
+
+  <div id="ending" class="panel" hidden>
+    <h1>Mama!</h1>
+    <p id="ending-text"></p>
+    <p id="ending-save"></p>
+    <div id="board-end"></div>
+    <button id="again-btn">Play again</button>
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
